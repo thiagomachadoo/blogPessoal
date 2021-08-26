@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface TemaInfo extends JpaRepository<Tema, Long> {
-    public List<Tema> findallByDescricaoContainsIgnoreCase(String descricao);
+public interface TemaRepository extends JpaRepository<Tema, Long> {
+    public List<Tema> findAllByDescricaoContainingIgnoreCase(String descricao);
 }

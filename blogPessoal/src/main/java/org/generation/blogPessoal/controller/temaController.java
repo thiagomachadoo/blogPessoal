@@ -1,7 +1,7 @@
 package org.generation.blogPessoal.controller;
 
 import org.generation.blogPessoal.model.Tema;
-import org.generation.blogPessoal.repository.TemaInfo;
+import org.generation.blogPessoal.repository.TemaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import java.util.List;
 public class temaController {
 
     @Autowired
-    private TemaInfo repository;
+    private TemaRepository repository;
 
     @GetMapping
     public ResponseEntity<List<Tema>> getAll(){
@@ -28,7 +28,7 @@ public class temaController {
     }
     @GetMapping("/nome/{nome}")
     public ResponseEntity<List<Tema>> getByName(@PathVariable String nome){
-        return ResponseEntity.ok(repository.findallByDescricaoContainsIgnoreCase(nome));
+        return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(nome));
     }
     @PostMapping
     public ResponseEntity<Tema> post (@RequestBody Tema tema){
