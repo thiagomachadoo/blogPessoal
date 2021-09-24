@@ -1,0 +1,11 @@
+.fs-16
+{
+    font-size: 16pt;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+i{
+    margin-left: 2px;
+}
