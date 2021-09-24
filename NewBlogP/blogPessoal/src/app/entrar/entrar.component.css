@@ -1,0 +1,10 @@
+#img-bg{
+    background-image: url(../../assets/img/OIP.jfif);
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
