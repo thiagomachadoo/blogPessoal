@@ -24,8 +24,6 @@ export class CadastrarComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0,0)
-
-  
   }
   confirmSenha(event: any){
     this.confirmarSenha = event.target.value
@@ -35,11 +33,11 @@ export class CadastrarComponent implements OnInit {
   this.tipoUsuario = event.target.value
  }
 
-  cadastrar(){
+  cadastrar(){ 
     this.user.tipo = this.tipoUsuario
 
     if(this.user.senha != this.confirmarSenha){
-      alert('As senhas estão corretas.')
+      alert('As senhas estão incorretas.')
     }else{
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp
