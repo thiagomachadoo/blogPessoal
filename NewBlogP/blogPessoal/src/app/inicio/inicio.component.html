@@ -7,9 +7,9 @@
                     <h5 class="fs-18">expresse aqui os seus pensamentos e opniões.</h5>
                 </div>
             </div>
-                <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="row d-flex justify-content-center">
                     <div class="col-md-6">
-                        <button class="btn btn-light mr-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Nova Postagem</button>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Nova Postagem</button>
                         <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Nova Postagem</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close"  aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="form-group">
@@ -71,14 +71,14 @@
         </div>
 
         <div class="form-group">
-          <label for="texto">Escolha um tema ou <a href="">cadastre um novo</a>: </label>
+          <label for="texto">Escolha um tema ou <a routerLink='/tema'>cadastre um novo</a>: </label>
          <select name="tema" id="tema" class="form-control">
            <option value="">Temas</option>
          </select>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger" >Cancelar</button>
         <button type="button" class="btn btn-success">Publicar</button>
       </div>
     </div>
