@@ -1,1 +1,77 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+    <div class="row bg-secondary d-flex align-items-center">
+        <div class="col-md-6">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-white">
+                    <h1 class="fs-54">Seja bem vindo(a)!</h1>
+                    <h5 class="fs-18">expresse aqui os seus pensamentos e opniões.</h5>
+                </div>
+            </div>
+                <div class="row d-flex justify-content-center mt-3 mb-5">
+                    <div class="col-md-6">
+                        <button class="btn btn-light mr-2">Nova Postagem</button>
+                        <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-md-6  d-flex justify-content-center">
+            <img src="https://i.imgur.com/qylyZ2t.png" width="500px" height="500px">
+
+        </div>
+    </div>
+</div>
+<div class="container mb-5 mt-5" id="postagens">
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+          <button class="nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#todasPostagens" type="button" role="tab" aria-controls="todasPostagens" aria-selected="true">Todas as Postagens</button>
+
+          <button class="nav-link text-secondary  font-weight-bold" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens" type="button" role="tab" aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</button>
+
+          <button class="nav-link text-secondary  font-weight-bold" id="nav-postagemTema-tab" data-bs-toggle="tab" data-bs-target="#postagemTema" type="button" role="tab" aria-controls="postagemTema" aria-selected="false">Postagens por tema</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-home-tab">
+            Todas as Postagens
+        </div>
+
+        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+            Minhas Postagens
+        </div>
+
+        <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+            Postagens por tema
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#novaPostagem">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
