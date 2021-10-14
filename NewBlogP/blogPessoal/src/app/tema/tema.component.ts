@@ -23,7 +23,6 @@ export class TemaComponent implements OnInit {
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }
-
     this.findAllTemas()
   }
 
